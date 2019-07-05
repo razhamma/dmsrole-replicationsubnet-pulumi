@@ -9,7 +9,7 @@ The goal of this tutorial is to provision a pulumi stack with defined resources 
   2- dms-vpc-policy-attachment(resource name) - aws::iam:RolePolicyAttachment(Pulumi aws specific resource type)
   3- ReplicationSubnetGroup(resource name) - aws:dms:replicationSubnetGroup(Pulumi aws specific resource type)
 
-Useccase:
+Usecase:
 =========
 When performing a database migration using AWS DMS service, subnet replication group is required to be defined for enabling DMS to perform migrations from source to a specific VPC. Additionally, if you use the AWS CLI or the AWS DMS API for your database migration, you must add three IAM roles to your AWS account before you can use the features of AWS DMS. Two of these are dms-vpc-role and dms-cloudwatch-logs-role. If you use Amazon Redshift as a target database, you must also add the IAM role dms-access-for-endpoint to your AWS account.
 
