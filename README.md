@@ -21,8 +21,8 @@ Setting up Pulumi will require:
 3. Installing awscli - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 4. configuring awscli with the user(must have necessary permissions to make IAM/DMS API calls) - https://www.pulumi.com/docs/reference/clouds/aws/setup/
 
-Proceeding to creation of our Pulumi Stack:
-===========================================
+Proceeding with creation of our Pulumi Stack:
+=============================================
 1. Through terminal: create a new directory named "dmsPulumi"  
    > mkdir dmsPulumi
 2. Go to this newly created directory:
