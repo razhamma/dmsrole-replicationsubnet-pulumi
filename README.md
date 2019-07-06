@@ -36,6 +36,7 @@ Proceeding with creation of our Pulumi Stack:
    d- aws:region: The AWS region to deploy into: (us-east-1)
 5. After successful creation of project and dependencies installations, you will see the message as: "Your new project is ready to go!"
 6. Successful project creation will create the following directory sturcture within "dmsPulumi" directory
+   ```bash
    |-project name
      |-node_modules
        |-...
@@ -45,8 +46,9 @@ Proceeding with creation of our Pulumi Stack:
      |-index.js - Actual Code with API calls specifications from "@pulumi/aws" module
      |-package.json
      |-package-lock.json
-     |-Pulumi.your_stack_name.yaml - Stack Settings file -> https://www.pulumi.com/docs/reference/project/#stack-settings-file
-     |-Pulumi.yaml - Project file -> https://www.pulumi.com/docs/reference/project/#pulumi-yaml
+     |-Pulumi.your_stack_name.yaml - Stack Settings file -> (https://www.pulumi.com/docs/reference/project/#stack-settings-file)
+     |-Pulumi.yaml - Project file -> (https://www.pulumi.com/docs/reference/project/#pulumi-yaml)
+    ```  
 7. Edit the "index.js" file and replace the sample code with code from "dms_iam_replicationgroup.js" file from this repo.
 8. Back to trminal and staying in "dmsPulumi" directory, run:
    pulumi up
