@@ -61,7 +61,7 @@ Proceeding with creation of our Pulumi Stack:
 7. Edit the ```index.js``` file from ```pulumi-iamdmssubnet-proj``` directory and replace the sample code with code from "dms_iam_replicationgroup.js" file from this repo.  
    **Please make sure to include subnet ids for the subnets from your VPC, in the "subnetIds:[]" input list inside the code.** 
 8. Back to trminal and staying in "dmsPulumi" directory, run:
-   pulumi up
+   ```pulumi up```
 9. This will create your Pulumi stack and command will return with a URL. Browsing to this URL will give you the visual representation of your Pulumi stack including activity history and resources belonging to this Pulumi stack.
 
 Clean Up:
