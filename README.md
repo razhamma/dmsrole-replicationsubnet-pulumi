@@ -18,8 +18,8 @@ Requirements:
 Setting up Pulumi will require:
 1. Installing Pulumi - To install Pulumi for AWS please follow guidelines here: https://www.pulumi.com/docs/quickstart/aws/install-pulumi/
 2. Installing node/npm(Make sure to choose version 8 or later)- https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-3. Install awscli - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
-4. configure it with the user(must have necessary permissions to make IAM/DMS API calls) - https://www.pulumi.com/docs/reference/clouds/aws/setup/
+3. Installing awscli - https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+4. configuring awscli with the user(must have necessary permissions to make IAM/DMS API calls) - https://www.pulumi.com/docs/reference/clouds/aws/setup/
 
 Proceeding to creation of our Pulumi Stack:
 ===========================================
