@@ -34,7 +34,7 @@ Proceeding with creation of our Pulumi Stack:
 3. Create a new Pulumi project. If this is your first time running pulumi new (or most other pulumi commands), you will be prompted to login to the Pulumi service  
    ```pulumi new aws-javascript``` 
 4. Pulumi will start project's creation and you will be asked to provide following details on terminal:
-   - project name: pulum-iamdmssubnet-proj
+   - project name: pulumi-iamdmssubnet-proj
    - project description: (A minimal AWS JavaScript Pulumi program)
    - stack name: iamdms-stack
    - aws:region: The AWS region to deploy into: (us-east-1)
@@ -43,7 +43,7 @@ Proceeding with creation of our Pulumi Stack:
 6. Successful project creation will create the following directory sturcture within "dmsPulumi" directory
 
    ```bash
-   ├── pulum-iamdmssubnet-proj  <--- Project name from Step 4
+   ├── pulumi-iamdmssubnet-proj  <--- Project name from Step 4
    │   ├── node_modules
    │   │   ├── ....
    │   │   │── ....
@@ -54,7 +54,7 @@ Proceeding with creation of our Pulumi Stack:
    │   └── Pulumi.yaml - Project file -> (https://www.pulumi.com/docs/reference/project/#pulumi-yaml)
    └── ....
    ```
-7. Edit the "index.js" file and replace the sample code with code from "dms_iam_replicationgroup.js" file from this repo.  
+7. Edit the ```index.js``` file from ```pulumi-iamdmssubnet-proj``` directory and replace the sample code with code from "dms_iam_replicationgroup.js" file from this repo.  
    **Please make sure to include subnet ids for the subnets from your VPC, in the "subnetIds:[]" input list inside the code.** 
 8. Back to trminal and staying in "dmsPulumi" directory, run:
    pulumi up
