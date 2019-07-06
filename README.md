@@ -30,22 +30,22 @@ Proceeding with creation of our Pulumi Stack:
 3. Create a new Pulumi project. If this is your first time running pulumi new (or most other pulumi commands), you will be prompted to login to the Pulumi service  
    ```pulumi new aws-javascript``` 
 4. Pulumi will start project's creation and you will be asked to provide following details on terminal:
-   - project name: (pulum-test-final)
+   - project name: pulum-iamdmssubnet-proj
    - project description: (A minimal AWS JavaScript Pulumi program)
-   - stack name: (dev) stack-final-test
+   - stack name: iamdms-stack
    - aws:region: The AWS region to deploy into: (us-east-1)
 5. After successful creation of project and dependencies installations, you will see the message as: "Your new project is ready to go!"
 6. Successful project creation will create the following directory sturcture within "dmsPulumi" directory
 
    ```bash
-   ├── project name  <--- Project name from Step 4
+   ├── pulum-iamdmssubnet-proj  <--- Project name from Step 4
    │   ├── node_modules
    │   │   ├── ....
    │   │   │── ....
    │   ├── index.js - Actual Code with API calls specifications from "@pulumi/aws" module
    │   ├── package.json
    │   ├── package-lock.json
-   │   ├── Pulumi.your_stack_name.yaml - Stack Settings file -> (https://www.pulumi.com/docs/reference/project/#stack-settings-file)
+   │   ├── Pulumi.iamdms-stcak.yaml - Stack Settings file -> (https://www.pulumi.com/docs/reference/project/#stack-settings-file)
    │   └── Pulumi.yaml - Project file -> (https://www.pulumi.com/docs/reference/project/#pulumi-yaml)
    └── ....
    ```
