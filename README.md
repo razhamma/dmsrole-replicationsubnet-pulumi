@@ -53,5 +53,8 @@ Proceeding with creation of our Pulumi Stack:
 7. Edit the "index.js" file and replace the sample code with code from "dms_iam_replicationgroup.js" file from this repo.
 8. Back to trminal and staying in "dmsPulumi" directory, run:
    pulumi up
-9. This will create your Pulumi stack and command will return with a URL. Browsing to this URL will give you the visual representation of your Plumi stack including activity history and resources.
-   
+9. This will create your Pulumi stack and command will return with a URL. Browsing to this URL will give you the visual representation of your Pulumi stack including activity history and resources belonging to this Pulumi stack.
+
+Clean Up:
+=========
+
