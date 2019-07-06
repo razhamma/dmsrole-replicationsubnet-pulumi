@@ -25,9 +25,9 @@ Proceeding with creation of our Pulumi Stack:
 =============================================
 1. Through terminal: create a new directory named "dmsPulumi"  
    ```mkdir dmsPulumi```
-2. Go to this newly created directory:
+2. Go to this newly created directory
    ```cd dmsPulumi```
-3. Create a new Pulumi project. If this is your first time running pulumi new (or most other pulumi commands), you will be prompted to login to the Pulumi service. 
+3. Create a new Pulumi project. If this is your first time running pulumi new (or most other pulumi commands), you will be prompted to login to the Pulumi service.
    ```pulumi new aws-javascript``` 
 4. Pulumi will start project's creation and you will be asked to provide following details on terminal:
    a- project name: (pulum-test-final)
