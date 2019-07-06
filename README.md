@@ -30,10 +30,10 @@ Proceeding with creation of our Pulumi Stack:
 3. Create a new Pulumi project. If this is your first time running pulumi new (or most other pulumi commands), you will be prompted to login to the Pulumi service  
    ```pulumi new aws-javascript``` 
 4. Pulumi will start project's creation and you will be asked to provide following details on terminal:
-   a- project name: (pulum-test-final)
-   b- project description: (A minimal AWS JavaScript Pulumi program)
-   c- stack name: (dev) stack-final-test
-   d- aws:region: The AWS region to deploy into: (us-east-1)
+   - project name: (pulum-test-final)
+   - project description: (A minimal AWS JavaScript Pulumi program)
+   - stack name: (dev) stack-final-test
+   - aws:region: The AWS region to deploy into: (us-east-1)
 5. After successful creation of project and dependencies installations, you will see the message as: "Your new project is ready to go!"
 6. Successful project creation will create the following directory sturcture within "dmsPulumi" directory
 
