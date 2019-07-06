@@ -34,7 +34,7 @@ Proceeding with creation of our Pulumi Stack:
    - project description: (A minimal AWS JavaScript Pulumi program)
    - stack name: iamdms-stack
    - aws:region: The AWS region to deploy into: (us-east-1)
-5. After successful creation of project and dependencies installations, you will see the message as: 
+5. After successful creation of project and dependencies installations, you will see the message as  
    ```"Your new project is ready to go!"```
 6. Successful project creation will create the following directory sturcture within "dmsPulumi" directory
 
