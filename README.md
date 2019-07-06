@@ -5,6 +5,7 @@ Pulumi:
 The Pulumi Platform includes an open source SDK and freemium SaaS to help developers, DevOps, and IT teams alike create, deploy, and manage cloud apps and infrastructure, across any clouds, with one consistent workflow.
 
 The goal of this tutorial is to provision a pulumi stack with defined resources on the AWS Cloud. This pulumi stack will be launched with following resources:
+  ```
   1. dms-vpc-role(resource name) - aws:iam:Role(Pulumi aws specific resource type) 
   2. dms-vpc-policy-attachment(resource name) - aws::iam:RolePolicyAttachment(Pulumi aws specific resource type)
   3. dms-cloudwatch-logs-role(resource name) - aws:iam:Role(Pulumi aws specific resource type) 
@@ -12,7 +13,7 @@ The goal of this tutorial is to provision a pulumi stack with defined resources 
   5. redshift-access-for-dms-endpoint-role(resource name) - aws:iam:Role(Pulumi aws specific resource type) 
   6. redshift-access-for-dms-endpoint-policy(resource name) - aws::iam:RolePolicyAttachment(Pulumi aws specific resource type)
   7. ReplicationSubnetGroup(resource name) - aws:dms:replicationSubnetGroup(Pulumi aws specific resource type)
-
+  ```
 Usecase:
 =========
 When performing a database migrations to AWS cloud using AWS DMS service, subnet replication group is required to be defined for enabling DMS to perform migrations from source to a specific VPC. Additionally, if you use the AWS CLI or the AWS DMS API for your database migration, you must add three IAM roles to your AWS account before you can use the features of AWS DMS. Two of these are dms-vpc-role and dms-cloudwatch-logs-role. If you use Amazon Redshift as a target database, you must also add the IAM role dms-access-for-endpoint to your AWS account. In case you are using not using Cloudfromation but some other orchestrator in order to meet the application requirements and to have full control over the way you need application to interact with AWS, due to a some buggy logic in the code or non-sequential js execution behavior, IAM eventual consistency can be a big problem and you might end up adding waits or unnecessary behaviors inside your code to override this problem. This tutorial includes the Nodejs code and step-by-step instructions on using Pulumi to successfully set up a DMS replication group along with all the necessary roles as well as required policy attachments without encountring IAM eventual consistency.
